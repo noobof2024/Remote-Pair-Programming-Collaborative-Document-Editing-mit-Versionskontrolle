@@ -1,5 +1,147 @@
 <!DOCTYPE html>
-<html>
-<p>hello world!</p>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frohe Weihnachten</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background: linear-gradient(to bottom, #003366, #001a33);
+            color: white;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
 
+        h1 {
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .greeting {
+            position: absolute;
+            top: 20%;
+            text-align: center;
+            z-index: 2;
+        }
+
+        .greeting p {
+            font-size: 1.5rem;
+        }
+
+        .snowflake, .symbol {
+            position: absolute;
+            top: -10px;
+            color: white;
+            font-size: 1.5rem;
+            animation: fall linear infinite;
+        }
+
+        .controls {
+            position: absolute;
+            bottom: 20px;
+            text-align: center;
+            z-index: 3;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #ff4500;
+            color: white;
+        }
+
+        button:hover {
+            background-color: #e63e00;
+        }
+
+        @keyframes fall {
+            0% {
+                transform: translateY(-10px);
+            }
+            100% {
+                transform: translateY(110vh);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="greeting">
+        <h1>Frohe Weihnachten!</h1>
+        <p>Wir wünschen Ihnen eine wundervolle und besinnliche Weihnachtszeit.</p>
+    </div>
+
+    <div class="controls">
+        <button id="toggle-snowflakes">Schneeflocken Starten/Stoppen</button>
+        <button id="toggle-music">Musik Abspielen/Stoppen</button>
+    </div>
+
+    <audio id="christmas-music" loop>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mp3">
+        Ihr Browser unterstützt kein Audio.
+    </audio>
+
+    <script>
+        const snowflakes = ["❄", "❅", "❆"];
+        const symbols = ["★", "🎄", "☆"];
+        let snowflakeInterval;
+        let isSnowing = true;
+
+        function createFallingElement(elementArray, className) {
+            const element = document.createElement("div");
+            element.textContent = elementArray[Math.floor(Math.random() * elementArray.length)];
+            element.classList.add(className);
+
+            const size = Math.random() * 20 + 10; // Größe zwischen 10px und 30px
+            const posX = Math.random() * window.innerWidth;
+            const duration = Math.random() * 5 + 5; // Dauer zwischen 5s und 10s
+
+            element.style.left = `${posX}px`;
+            element.style.fontSize = `${size}px`;
+            element.style.animationDuration = `${duration}s`;
+            document.body.appendChild(element);
+
+            setTimeout(() => {
+                document.body.removeChild(element);
+            }, duration * 1000); // Entfernt das Element nach der Animationsdauer
+        }
+
+        function toggleSnowflakes() {
+            if (isSnowing) {
+                clearInterval(snowflakeInterval);
+            } else {
+                snowflakeInterval = setInterval(() => createFallingElement(snowflakes, "snowflake"), 200);
+            }
+            isSnowing = !isSnowing;
+        }
+
+        const music = document.getElementById("christmas-music");
+        let isPlaying = false;
+
+        function toggleMusic() {
+            if (isPlaying) {
+                music.pause();
+            } else {
+                music.play();
+            }
+            isPlaying = !isPlaying;
+        }
+
+        document.getElementById("toggle-snowflakes").addEventListener("click", toggleSnowflakes);
+        document.getElementById("toggle-music").addEventListener("click", toggleMusic);
+
+        // Start initial Schneeflockenanimation
+        snowflakeInterval = setInterval(() => createFallingElement(snowflakes, "snowflake"), 200);
+    </script>
+</body>
 </html>
