@@ -1,0 +1,47 @@
+Mat – Nr.: 00931255 & 52107911
+Reflexion
+1. Herausforderungen und Vorteile bei der Nutzung der Versionskontrolle
+Die Nutzung von Versionskontrolle mit GitHub brachte sowohl Herausforderungen als auch
+klare Vorteile mit sich. Eine Herausforderung bestand anfangs darin, den Workflow mit
+Commits optimal zu organisieren, damit keine Konflikte entstehen. Zudem war es wichtig, die
+Commit-Nachrichten präzise und informativ zu gestalten, um die Nachverfolgbarkeit der
+Änderungen sicherzustellen.
+Die Vorteile überwogen jedoch deutlich: Durch GitHub konnten wir Änderungen effizient
+nachverfolgen und uns über Commits gegenseitig auf dem Laufenden halten. Die
+Versionskontrolle hat unsere Zusammenarbeit stark vereinfacht, da wir sicherstellen konnten,
+dass keine Arbeitsschritte verloren gehen oder überschrieben werden.
+2. Einfluss der Versionskontrolle auf Qualität und Zusammenarbeit
+Die Versionskontrolle hatte einen positiven Einfluss auf die Qualität der Arbeit und die
+Zusammenarbeit. Sie ermöglichte es uns, remote effektiv im Pair-Programming-Stil zu
+arbeiten, da wir Änderungen direkt sehen und besprechen konnten. Dieses iterative
+Vorgehen führte zu einer stetigen Verbesserung der Webseite. Durch die Versionshistorie
+hatten wir jederzeit eine Übersicht, welche Änderungen vorgenommen wurden, und konnten
+Fehler schnell erkennen und beheben.
+3. Kommunikation und Koordination
+Herausforderungen in der Kommunikation und Koordination wurden durch klare Absprachen
+und den Einsatz von GitHub selbst gemeistert. Wir haben uns auf regelmäßige Updates via
+Commits verlassen und diese als zentrale Informationsquelle genutzt. Zusätzlich haben wir
+Tools wie Kommentarfunktionen auf GitHub verwendet, um spezifische Fragen zu klären.
+Obwohl wir separat gearbeitet haben, wirkte es durch diese Methode wie eine enge
+Zusammenarbeit.
+4. Unterstützung durch ChatGPT
+ChatGPT war ein hilfreiches Tool bei der Bearbeitung der Aufgabe. Es half uns, Probleme
+schneller zu lösen, wie z. B. bei der Klärung technischer Fragen oder der Optimierung von
+Codestrukturen. Allerdings mussten wir manchmal Antworten anpassen oder ergänzen, da
+sie nicht immer direkt auf unsere spezifische Situation zugeschnitten waren. Insgesamt war
+die Unterstützung durch ChatGPT sehr wertvoll, und wir würden es für ähnliche Aufgaben in
+Zukunft wieder einsetzen.
+5. Erkenntnisse für zukünftige Projekte
+Für zukünftige Projekte nehmen wir folgende Erkenntnisse mit:
+• Klare Absprachen und regelmäßige Updates sind entscheidend für eine erfolgreiche
+Zusammenarbeit.
+• Versionskontrollsysteme wie GitHub sind nicht nur für größere Teams, sondern auch
+für kleine Projekte hilfreich.
+• Der Einsatz von KI-Tools wie ChatGPT kann die Effizienz steigern, aber sollte stets
+kritisch reflektiert und mit anderen Ressourcen ergänzt werden.
+Wir würden ChatGPT in ähnlichen Projekten erneut nutzen, insbesondere für schnelle
+Problemlösungen oder erste Ansätze. Für spezifischere technische Aufgaben könnten auch
+spezialisierte Tools wie Copilot oder andere KI-gestützte Programmierhilfen sinnvoll sein,
+also vor allem für Projekte die mehr Tiefe beim Programmieren erfordern empfiehlt sich
+BlackBox.
+OS352 Gruppe 1
